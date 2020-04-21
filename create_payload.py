@@ -28,7 +28,7 @@ print("""\033[31m                &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&
                 &&&&&&&&&&&&&&&&&&&&&&&&&&&&&&\033[m""")
 print('\033[36m==================================================================\033[m')
 #Criar PAYLOAD
-select = input("\033[32m[1]Criar PAYLOAD\n[2]Infectar existente\n[3]Sair\n>\033[m").upper()
+select = input("\033[32m[1]Criar PAYLOAD\n[2]Infectar existente\n[3]Sair\nHelp\n>\033[m").upper()
 printar()
 
 def msfconsole():
@@ -86,3 +86,9 @@ elif select == '3' or select == 'SAIR':
     print('Saindo...')
     sleep(1)
     quit()
+elif select == 'HELP':
+    print("""\033[34m
+    LHOST -> Use o host da sua máquina.\n
+    LPORT -> Use a porta que deseja usar \n
+    TCP -> De uma forma simples, o TCP/IP é o principal protocolo de envio e recebimento de dados MS internet.\n
+    HTTP -> HTTP é um protocolo de transferência que possibilita que as pessoas que inserem a URL do seu site na Web possam ver os conteúdos e dados que nele existem. \033[m""")
