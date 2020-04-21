@@ -9,6 +9,7 @@ import subprocess
 def printar():
         print('\033[33m=\033[m'*50)
 os.system('clear')
+os.system('mkdir Actions')
 
 print('\033[36m==================================================================\033[m')
 print('  \033[36m                   Created by Marlon Sousa\033[m')
